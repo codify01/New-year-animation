@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Yeah Animation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Jost:ital,wght@0,500;0,700;1,700&family=Nunito:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rebeccapurple;
+            text-align: center;
+        }
+        .p-div {
+            margin: auto;
+        }
+        .line {
+            width: 5px;
+            height: 20px;
+            background-color: black;
+            display: inline-block;
+            position: absolute;
+            bottom: 54%;
+            left: 51%;
+            transform: rotate(34deg);
+            /* margin-right: -34px; */
+        }
+        h1 {
+            font-size: 3.3em;
+            color: white;
+            font-family: 'Dancing Script', cursive;
+            font-weight: bold;
+            animation: head;
+            animation-duration: 4s;
+            animation-timing-function: ease-in;
+            animation-delay: 9s;
+            animation-fill-mode: forwards;
+            position: relative;
+            /* top: 0px; */
+            opacity: 0;
+        }
+        @keyframes head {
+            from {top: 200px; opacity: 0;}
+            to {top: 50px; opacity: 1;}
+        }
+        .number0, .number2, .number3, .number4{
+            font-size: 100px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        
+        .number3 {
+            animation-name: three;
+            animation-duration: 5s;
+            animation-delay: 5s;
+            animation-iteration-count: unset;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+            position: relative;
+            /* top: -90px; */
+        }
+        @keyframes three {
+            0% { top: 0px;
+                opacity: 1;
+            }
+            100% { top: -90px;
+                    opacity: 0;
+            }
+        }
+        .number4 {
+            animation-name: four;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-timing-function: ease-in;
+            /* animation-iteration-count: infinite; */
+            position: relative;
+            left: -55px;
+        }
+        @keyframes four {
+            0% { left: 100px;}
+            100% { left: -55px;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy New Year <br> from all us <br> @ Codify Technoligies</h1>
+   <div class="p-div">
+    <div class="number2">2</div>
+    <div class="number0">0</div>
+    <div class="number2">2</div>
+    <div class="line"></div>
+    <div class="number3">3</div>
+    <div class="number4">4</div>
+   </div>
+   <div class="lillipop">
+    <div class="round"></div>
+    <div class="stick"></div>
+   </div>
+</body>
+</html>
