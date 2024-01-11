@@ -75,26 +75,48 @@
             animation-timing-function: ease-in;
             /* animation-iteration-count: infinite; */
             position: relative;
+            /* left: -55px; */
             left: -55px;
+            z-index: 1;
         }
         @keyframes four {
-            0% { left: 100px;}
+            0% { left: 110px;}
             100% { left: -55px;}
         }
         .lillipop {
             display: block;
             align-items: center;
             justify-content: center;
+            position: absolute;
+            bottom: 66%;
+            left: 60%;
+            animation-name: lollipop;
+            animation-duration: 10s;
+            animation-delay: 0s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+
+        }
+        @keyframes lollipop {
+            0% {left: 60%;}
+            50% {left: 51.5%; bottom: 66%; opacity: 1;}
+            100% {bottom: 80%; left: 51.5%; opacity: -0.5;}
+            /* 100% {left: 51.5%;} */
         }
         .round {
-            width: 100px;
-            height: 100px;
+            width: 70px;
+            height: 70px;
             background-color: gold;
+            position: relative;
+            z-index: 1;
             border-radius: 100%;
         }
         .stick {
             width: 10px;
-            height: 300px;
+            position: relative;
+            left: 30px;
+            bottom: 2px;
+            height: 120px;
             background-color: white;
         }
     </style>
